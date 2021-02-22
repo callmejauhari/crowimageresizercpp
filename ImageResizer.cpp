@@ -146,7 +146,7 @@ bool ImageResizer::ResizeImage(std::string& base64Image, long width, long height
         base64Image = base64_encode(enc_msg, buf.size());
         return true;
     } catch (Exception &e) {
-        base64Image = e.msg;
+        base64Image = "image anda ada yang keliru";
     }
     return false;
 }

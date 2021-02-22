@@ -34,8 +34,8 @@ void ResizerImageRoute(crow::Crow<>& app) {
                                     responses["message"] = basenampat;
                         }
                         return responses;
-                    } else responses["message"] = "payload doesn't contain the right variables";
-                    } else responses["message"] = "payload isn't json";
+                    } else responses["message"] = "tidak terdapat variable yang diperlukan untuk resize image";
+                    } else responses["message"] = "ada sesuatu yang salah di payload anda";
                         responses["code"] = 400;
                     return responses;
                 }
